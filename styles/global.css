@@ -1,0 +1,39 @@
+* {
+   margin: 0;
+}
+
+body {
+   background-color: #8BC6EC;
+   background-image: linear-gradient(-62deg, #8BC6EC, #9599E2);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 120vh;
+   width: 96%;
+   margin: auto;
+}
+
+
+::-webkit-scrollbar {
+   width: initial;
+}
+
+::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+   background: rgba(0, 0, 0, 18%);
+   border-radius: 1rem;
+}
+
+header {
+   display: flex;
+   height: 111px;
+   margin: auto;
+}
+
+header img {
+   width: 129px;
+   align-items: center;
+   margin: auto 0;
+}
