@@ -1,17 +1,22 @@
-* {
-   margin: 0;
+html {
+   --global-font: #f5f2f2;
 }
 
 body {
-   background-color: #8BC6EC;
-   background-image: linear-gradient(-62deg, #8BC6EC, #9599E2);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   height: 120vh;
    width: 96%;
    margin: auto;
+   color: var(--global-font);
+   font-family: "Noto Sans KR", sans-serif;
+   background-color: #8bc6ec;
+   background-image: linear-gradient(-62deg, #8bc6ec, #9599e2);
+   background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(0, 152, 155, 1) 0.1%,
+      rgba(0, 94, 120, 1) 94.2%
+   );
+   background-repeat: no-repeat;
+   background-attachment: fixed;
 }
-
 
 ::-webkit-scrollbar {
    width: initial;
@@ -26,14 +31,72 @@ body {
    border-radius: 1rem;
 }
 
-header {
+.header {
    display: flex;
+   justify-content: space-between;
+   justify-items: center;
    height: 111px;
-   margin: auto;
 }
 
-header img {
-   width: 129px;
-   align-items: center;
+.header__logo {
+   justify-items: center;
    margin: auto 0;
+}
+
+.header__menu {
+   display: inherit;
+   flex-direction: column;
+   /* width: 100px; */
+   height: 48px;
+   /* margin: auto 0 auto auto; */
+   margin: auto 0;
+   /* padding: 0.05%; */
+   padding-right: 1.2rem;
+   background-color: rgba(255, 255, 255, 12%);
+   border-radius: 24px;
+   cursor: pointer;
+   /* box-sizing: content-box; */
+}
+
+.header__menu:hover .header__submenu {
+   display: block;
+}
+
+.header__menu > section {
+   display: inherit;
+   /* display: none; */
+   flex-direction: row;
+   width: max-content;
+   align-items: center;
+   height: inherit;
+   box-sizing: border-box;
+   margin: auto 0;
+}
+
+.header__menu--profile {
+   margin: 0;
+   margin-left: 0;
+   border: 1px rgba(255, 255, 255, 54%) solid;
+   background-color: rgba(245, 242, 242, 18%);
+   height: inherit;
+   width: 48px;
+   border-radius: 50%;
+   box-sizing: inherit;
+}
+
+.header__menu--profile img {
+   width: 45px;
+   box-sizing: border-box;
+}
+
+.header__menu--title {
+   /* height: inherit; */
+   margin-left: 0.6rem;
+}
+
+.header__submenu {
+   display: none;
+   margin-top: 0;
+   list-style: none;
+   text-align: right;
 }

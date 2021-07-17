@@ -1,2 +1,2 @@
-# TVnow
-This is a video platform fully based in JS.
+# Musique
+This is a music and video platform fully based in JS.

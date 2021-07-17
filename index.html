@@ -5,7 +5,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>TVnow</title>
+   <title>Musique - The web's music player</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
    <link rel="icon" type="image/png" href="images/favicon.png">
    <link rel="stylesheet" href="styles/global.css">
    <script defer src="core.js"></script>
@@ -13,7 +16,19 @@
 
 <body>
    <header class="header">
-      <img class="header__img" src="images/logo.png" alt="">
+      <img class="header__logo" src="images/logo.png" height="40" alt="TVnow logo">
+      <section class="header__menu">
+         <section>
+            <figure class="header__menu--profile">
+               <img src="images/Jonenn.gif" alt="">
+            </figure>
+            <section class="header__menu--title">Profile</section>
+         </section>
+         <ul class="header__submenu">
+            <li>Account</li>
+            <li>Log out</li>
+         </ul>
+      </section>
    </header>
 </body>
 
