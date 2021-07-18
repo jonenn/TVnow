@@ -1,9 +1,10 @@
 html {
    --global-font: #f5f2f2;
+   --black-font: #5c5c5c;
 }
 
 body {
-   width: 96%;
+   width: 90%;
    margin: auto;
    color: var(--global-font);
    font-family: "Noto Sans KR", sans-serif;
@@ -11,8 +12,8 @@ body {
    background-image: linear-gradient(-62deg, #8bc6ec, #9599e2);
    background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
-      rgba(0, 152, 155, 1) 0.1%,
-      rgba(0, 94, 120, 1) 94.2%
+      #00989b 0.1%,
+      #005e78 94.2%
    );
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -54,15 +55,16 @@ body {
    padding-right: 1.2rem;
    background-color: rgba(255, 255, 255, 12%);
    border-radius: 24px;
-   cursor: pointer;
+   /* cursor: pointer; */
    /* box-sizing: content-box; */
+   cursor: pointer;
 }
 
 .header__menu:hover .header__submenu {
    display: block;
 }
 
-.header__menu > section {
+.header__container {
    display: inherit;
    /* display: none; */
    flex-direction: row;
@@ -76,7 +78,7 @@ body {
 .header__menu--profile {
    margin: 0;
    margin-left: 0;
-   border: 1px rgba(255, 255, 255, 54%) solid;
+   border: 1px rgba(245, 242, 242, 12%) solid;
    background-color: rgba(245, 242, 242, 18%);
    height: inherit;
    width: 48px;
@@ -97,6 +99,62 @@ body {
 .header__submenu {
    display: none;
    margin-top: 0;
+   padding-top: 0.6rem;
    list-style: none;
    text-align: right;
+   /* font-size: 0.9rem; */
+}
+
+.header__item {
+   text-decoration: none;
+   color: var(--global-font);
+}
+
+.header__item:visited {
+   color: var(--global-font);
+}
+
+.header__item:hover {
+   color: #abcaca;
+}
+
+.search-form {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   margin: auto;
+}
+
+.sf-container {
+   display: inherit;
+   width: 66%;
+   height: 2.4rem;
+   flex-direction: row;
+   margin: auto;
+   /* border: 1px red solid; */
+   overflow: hidden;
+}
+
+.search-form__title {
+   margin: 9rem auto 1.2rem auto;
+}
+
+.search-form__input {
+   width: 100%;
+   padding: 0;
+   padding-left: 2.1rem;
+   color: var(--global-font);
+   border: 1px rgba(245, 242, 242, 9%) solid;
+   outline: none;
+   font-size: 1rem;
+   border-radius: 5.6rem;
+   background-image: url(../images/search.png);
+   background-repeat: no-repeat;
+   background-size: 1.2rem;
+   background-position: 0.6rem;
+   background-color: rgba(245, 242, 242, 18%);
+}
+
+::placeholder {
+   color: rgba(171, 202, 202);
 }

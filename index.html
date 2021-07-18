@@ -18,18 +18,24 @@
    <header class="header">
       <img class="header__logo" src="images/logo.png" height="40" alt="TVnow logo">
       <section class="header__menu">
-         <section>
+         <section class="header__container">
             <figure class="header__menu--profile">
                <img src="images/Jonenn.gif" alt="">
             </figure>
             <section class="header__menu--title">Profile</section>
          </section>
          <ul class="header__submenu">
-            <li>Account</li>
-            <li>Log out</li>
+            <li><a class="header__item" href="#">Account</a></li>
+            <li><a class="header__item" href="#">Log out</a></li>
          </ul>
       </section>
    </header>
+   <section class="search-form">
+      <h1 class="search-form__title">What to listen to now?</h1>
+      <section class="sf-container">
+         <input class="search-form__input" type="text" placeholder="Artist, song or album">
+      </section>
+   </section>
 </body>
 
 </html>
