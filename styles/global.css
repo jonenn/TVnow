@@ -8,7 +8,7 @@ body {
    margin: auto;
    color: var(--global-font);
    font-family: "Noto Sans KR", sans-serif;
-   background-color: #8bc6ec;
+   background-color: #005e78;
    background-image: linear-gradient(-62deg, #8bc6ec, #9599e2);
    background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
@@ -17,6 +17,7 @@ body {
    );
    background-repeat: no-repeat;
    background-attachment: fixed;
+   /* height: 150vh; */
 }
 
 ::-webkit-scrollbar {
@@ -24,12 +25,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-   background: transparent;
+   background: inherit;
 }
 
 ::-webkit-scrollbar-thumb {
    background: rgba(0, 0, 0, 18%);
    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-corner {
+   background: transparent;
 }
 
 .header {
@@ -157,4 +162,54 @@ body {
 
 ::placeholder {
    color: rgba(171, 202, 202);
+}
+
+.carousel-container {
+   width: 100%;
+   margin-top: 24vh;
+}
+
+.carousel {
+   white-space: nowrap;
+   position: relative;
+   overflow: scroll;
+   /* display: flex; */
+   /* flex-direction: row; */
+}
+
+.carousel:hover .carousel__item {
+   opacity: 0.3;
+}
+
+.carousel:hover .carousel__item:hover {
+   transform: scale(1.2);
+   opacity: 1;
+}
+
+.carousel__item {
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+   margin: 12px 0.6rem 30px 0.6rem;
+   /* margin-top: 50px; */
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 12%);
+   overflow: hidden;
+   cursor: pointer;
+   transition: 600ms;
+   transform-origin: center left;
+}
+
+.carousel__item:first-child {
+   margin-left: 0;
+}
+.carousel__item:last-child {
+   margin-right: 0;
+}
+
+.carousel__title {
+}
+
+.carousel__item:hover ~ .carousel__item {
+   transform: translateX(40px);
 }
