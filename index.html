@@ -16,107 +16,107 @@
 
 <body>
    <header class="header">
-      <img class="header__logo" src="images/logo.png" height="40" alt="TVnow logo">
+      <a class="header__link" href="/">
+         <img class="header__logo" src="images/logo.png" height="40" alt="TVnow logo">
+      </a>
       <section class="header__menu">
-         <section class="header__container">
-            <figure class="header__menu--profile">
+         <section class="menu">
+            <figure class="menu__image">
                <img src="images/Jonenn.gif" alt="">
             </figure>
-            <section class="header__menu--title">Profile</section>
+            <section class="menu__title">Profile</section>
          </section>
-         <ul class="header__submenu">
-            <li><a class="header__item" href="#">Account</a></li>
-            <li><a class="header__item" href="#">Log out</a></li>
+         <ul class="submenu">
+            <li><a class="submenu__item" href="#">Account</a></li>
+            <li><a class="submenu__item" href="login.html">Log out</a></li>
          </ul>
       </section>
    </header>
-   <section class="search-form">
-      <h1 class="search-form__title">What to listen to now?</h1>
-      <section class="sf-container">
-         <input class="search-form__input" type="text" placeholder="Artist, song or album">
-      </section>
+   <section class="search">
+      <h1 class="search__title">What to listen to now?</h1>
+      <input class="search__input" type="search" placeholder="Artist, song or album">
    </section>
-   <section class="carousel-container">
+   <section class="carousel">
       <h3 class="carousel__title">Liked songs</h3>
-      <section class="carousel">
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/reggattadeblanc.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Message In A Bottle</h6>
-               <p class="carousel-item__overlay--band">The Police</p>
+      <section class="carousel__grid">
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/reggattadeblanc.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Message In A Bottle</h6>
+               <p class="carousel__subtitle--band">The Police</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/The_Soft_Parade.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Touch Me</h6>
-               <p class="carousel-item__overlay--band">The Doors</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/The_Soft_Parade.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Touch Me</h6>
+               <p class="carousel__subtitle--band">The Doors</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/Back_to_Black.png" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Me & Mr Jones</h6>
-               <p class="carousel-item__overlay--band">Amy Winehouse</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/Back_to_Black.png" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Me & Mr Jones</h6>
+               <p class="carousel__subtitle--band">Amy Winehouse</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/2.png" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">My Kind of Woman</h6>
-               <p class="carousel-item__overlay--band">Mac DeMarco</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/2.png" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">My Kind of Woman</h6>
+               <p class="carousel__subtitle--band">Mac DeMarco</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/Musichastherighttochildren.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Roygbiv</h6>
-               <p class="carousel-item__overlay--band">Boards of Canada</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/Musichastherighttochildren.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Roygbiv</h6>
+               <p class="carousel__subtitle--band">Boards of Canada</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/SpaceOddity.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Space Oddity</h6>
-               <p class="carousel-item__overlay--band">David Bowie</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/SpaceOddity.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Space Oddity</h6>
+               <p class="carousel__subtitle--band">David Bowie</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/Nevermind.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Polly</h6>
-               <p class="carousel-item__overlay--band">Nirvana</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/Nevermind.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Polly</h6>
+               <p class="carousel__subtitle--band">Nirvana</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/Stadiumarcadium.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Snow (Hey Oh)</h6>
-               <p class="carousel-item__overlay--band">Red Hot Chili Peppers</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/Stadiumarcadium.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Snow (Hey Oh)</h6>
+               <p class="carousel__subtitle--band">Red Hot Chili Peppers</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/The-Drums.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Me And The Moon</h6>
-               <p class="carousel-item__overlay--band">The Drums</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/The-Drums.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Me And The Moon</h6>
+               <p class="carousel__subtitle--band">The Drums</p>
             </section>
          </div>
-         <div class="carousel-item">
-            <img class="carousel-item__image" src="images/album-cover/DefinitelyMaybe.jpg" alt="">
-            <section class="carousel-item__overlay">
-               <img class="carousel-item__overlay--play" src="images/play.png" alt="">
-               <h6 class="carousel-item__overlay--title">Cigarettes & Alcohol</h6>
-               <p class="carousel-item__overlay--band">Oasis</p>
+         <div class="carousel__item">
+            <img class="carousel__image--cover" src="images/album-cover/DefinitelyMaybe.jpg" alt="">
+            <section class="carousel__overlay">
+               <img class="carousel__play" src="images/play.png" alt="">
+               <h6 class="carousel__title--song">Cigarettes & Alcohol</h6>
+               <p class="carousel__subtitle--band">Oasis</p>
             </section>
          </div>
       </section>
