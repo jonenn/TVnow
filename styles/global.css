@@ -4,6 +4,7 @@ html {
 }
 
 body {
+   -webkit-tap-highlight-color: transparent;
    position: relative;
    width: 90%;
    min-height: 100vh;
@@ -62,7 +63,6 @@ a:hover {
 }
 
 .header__logo {
-   justify-items: center;
    margin: auto 0;
 }
 
@@ -182,7 +182,6 @@ a:hover {
 .carousel {
    width: 100%;
    margin-top: 24vh;
-   /* margin-bottom: 12rem; */
 }
 
 .carousel__grid {
@@ -280,16 +279,13 @@ a:hover {
 }
 
 .footer {
-   /* display: flex; */
    position: absolute;
-   /* height: 3rem; */
    left: 0;
    right: 0;
    bottom: 1rem;
    margin: 0 auto;
    text-align: center;
    font-size: 0.84rem;
-   /* justify-content: space-around; */
 }
 
 .footer a {
@@ -298,6 +294,33 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+   .header {
+      height: 84px;
+   }
+
+   .header__link {
+      margin: auto;
+   }
+
+   .header__menu {
+      position: relative;
+      padding-right: 0;
+   }
+
+   .menu__title {
+      display: none;
+   }
+
+   .submenu {
+      position: absolute;
+      top: 42px;
+      right: 0.3rem;
+   }
+
+   .carousel {
+      margin-top: 12vh;
+   }
+
    .search__title {
       margin-top: 4.8rem;
       text-align: center;
@@ -330,7 +353,6 @@ a:hover {
    background-color: unset;
    background-size: cover;
    background-position: center left;
-   /* filter: blur(4px); */
 }
 
 .login {
@@ -475,6 +497,12 @@ a:hover {
 @media screen and (max-width: 1440px) and (min-width: 768px) {
    .login {
       width: 30%;
+   }
+
+   .footer {
+      bottom: -4.2rem;
+      padding-bottom: 1rem;
+      font-size: 0.6rem;
    }
 }
 /* /Log In */ ;
