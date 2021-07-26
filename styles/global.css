@@ -335,7 +335,7 @@ a:hover {
    }
 
    .footer {
-      bottom: -4.2rem;
+      bottom: -1.8rem;
       padding-bottom: 1rem;
       font-size: 0.6rem;
    }
@@ -479,6 +479,10 @@ a:hover {
    margin-top: 3rem;
 }
 
+.socialmedia:hover {
+   opacity: 0.54;
+}
+
 .login a {
    text-decoration: none;
 }
@@ -500,7 +504,7 @@ a:hover {
    }
 
    .footer {
-      bottom: -4.2rem;
+      bottom: -1rem;
       padding-bottom: 1rem;
       font-size: 0.6rem;
    }
